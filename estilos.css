@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: verdana;
+  }
+.ancho {
+    max-width: 1300px;
+    margin: auto;
+  }
+  .barrarosa{
+    padding: 15px;
+    background-color: #FF3281;
+  }
+  header{
+   background-color: #fff9f1;
+   padding: 10px;
+  }
+  .barra a{
+    display: none;
+  }
+  .contenedoricono{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contenedoricono figure{
+    max-width: 200px;
+
+  }
+  .contenedoricono figure img{
+    width: 100%;;
+  }
+  .contenedoricono aside{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .contenedoricono aside a{
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+    display: inline-block;
+
+  }
+  .contenedoricono aside a:hover{
+    color: #FF3281;
+    transition: 0.5s;
+  }
+  .menu{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    
+  }
+  .menu{
+    list-style: none;
+  }
+  .menu  li a{
+    text-decoration: none;
+    color: black ;
+    display: inline-block;
+    font-weight: bold;
+  }
+  .menu  li a:hover{
+    color: #FF3281;
+    transition: 0.5s;
+  }
+  /*portada*/  
+.slide{
+    position: relative;
+    overflow: hidden;
+}
+.slide figure{
+    max-width: 100%;
+   
+}
+.slide figure img{
+    width: 100%;
+   
+}
+.textopromo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: 10%;
+    color: white;
+}
+.btnrosa{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FF3281;
+    border: 2px solid #FF3281;
+    color: white;
+    border-radius: 5px;
+}
+.btntrans{
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #FF3281;
+    color: white;
+    border-radius: 5px;
+}
+.btnrosa:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.btntrans:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+  /*velas*/
+.contenedorvelas{
+display: flex;
+flex-direction: row;
+padding: 10px;
+justify-content: space-between;
+}
+.contenedorvelas article{
+    width: 450px;
+    text-align: justify;
+    align-items: center;
+}
+.contenedorvelas figure{
+    max-width: 450px;
+}
+.contenedorvelas figure img{
+    width: 100%;
+    border: 5px solid green;
+    box-shadow: 0px 0px 10px #ccc;
+    filter: opacity(25%);
+    transition: all 1s;
+}
+.contenedorvelas figure img:hover{
+    filter: opacity(100%);
+}
+/*perfume*/
+.perfumeprin{
+    background-color: #fff9f1;
+}
+h3{
+    text-align: center;
+}
+.perfume{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.perfume figure{
+    max-width: 500px;
+}
+.perfume figure img{
+    width: 100%;
+    border-radius: 5px;
+    filter: sepia(100%);
+    transition: all .5s;
+}
+.perfume figure img:hover{
+    filter: sepia(30%);
+}
+.perfume article{
+    width: 800px;
+    text-align: justify;
+}
+.negritas{
+    font-weight: bold;
+}
+/*masajes*/
+.trio1{
+    background-color: #fff9f1;
+}
+.trio{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin: auto;
+}
+.trio article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffe8a4;
+    border-radius: 5px;
+    max-width: 350px;
+    padding: 15px;
+    margin-top: 5px;
+}
+.trio article a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background-color: #FF3281;
+    border-radius: 6px;
+}
+.trio figure{
+    max-width: 150px;
+    
+}
+.trio figure img{
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+/*galeria*/
+.galeria{
+    display: grid;
+    grid-template-areas: "galeria5 galeria2 galeria1 galeria1" "galeria4 galeria3 galeria1 galeria1" ;
+}
+.galeria figure{
+    width:100%;
+    height:100%;
+    margin: 0;
+    overflow:hidden;
+}
+
+.galeria figure img{
+    width:100%;
+    height:100%;
+
+  }
+  .galeria1{
+    grid-area: galeria1;
+  }
+  .galeria2{
+    grid-area: galeria2;
+  }
+  .galeria3{
+    grid-area: galeria3;
+  }
+  .galeria4{
+    grid-area: galeria4;
+  }
+  .galeria5{
+    grid-area: galeria5;
+  }
+  h2{
+    text-align: center;
+    padding: 10px;
+  }
+   /*--footer----------------*/
+   footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  .textorosa{
+    color: #FF3281;
+  }
+  @media screen and (max-width:1100px){
+    .textopromo{
+        right: 25%;
+    }
+  }
+  @media screen and (max-width:850px){
+    .contenedorvelas{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .perfume{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+.perfume article{
+    width: 700px;
+}
+.trio{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.galeria{
+
+    grid-template-areas: " galeria1 galeria1" "galeria5 galeria2" "galeria4 galeria3" ;
+}
+
+  }
+
+
+  @media screen and (max-width:600px){
+    
+    .perfume article{
+        width: 450px;
+    }
+  }
+@media screen and (max-width:480px){
+    .menu{
+        display: none;
+    }
+
+    .barra a{
+        text-decoration: none;
+        display: inline-block;
+        padding: 20px;
+        background-color: #FF3281;
+        color: white;
+    }
+    .trio article{
+        margin-bottom: 30px;
+    }
+    .textopromo{
+        font-size: 12px;
+    }
+    .perfume article{
+        width: 350px;
+    }
+    .contenedoricono figure{
+        width: 100px;
+    }
+    .activar{
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 410px;
+
+    }
+    .contenedoricono{
+        flex-direction: column;
+    }
+    .contenedorvelas article{
+        width: 300px;
+    }
+.galeria{
+
+    grid-template-areas: " galeria1" "galeria5" "galeria2" "galeria4" "galeria3" ;
+}
+.icono1{
+    order:3;
+  }
+.icono2{
+    order:1;
+  }
+  .icono3{
+    order:2;
+  }
+ 
+}
